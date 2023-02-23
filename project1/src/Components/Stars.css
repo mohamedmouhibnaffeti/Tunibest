@@ -1,0 +1,22 @@
+.star.filled {
+    color: #ffbf00;
+}
+  
+.star.half-filled {
+    color: #ffbf00;
+    position: relative;
+}
+  
+.star.half-filled::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #ffbf00;
+}
+.star{
+    font-size: 18px;
+    margin-left: 10px;
+}

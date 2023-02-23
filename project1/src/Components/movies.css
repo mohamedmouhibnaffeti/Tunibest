@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+}
+Body{
+    justify-content: center;
+    align-items: center;
+}
+.Bod{
+    width: 90%;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 9%;
+    margin-right: auto;
+    display: inline-block;
+    align-content: center;
+    background-size: contain;
+}
+.im1{   
+    margin-top: 30px;
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    background-color: antiquewhite;
+    display: inline-block;
+    margin-left: 50px;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.im1:hover{
+    border-color: black;
+    box-shadow: 8px 8px 15px rgb(165, 167, 166);
+    cursor: pointer;
+}
+img{
+    width: 230px;
+    height: 300px;
+    margin-top: 10px;
+}
+.im1 H2{
+    font-size: 20px;
+}
+#Mov{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

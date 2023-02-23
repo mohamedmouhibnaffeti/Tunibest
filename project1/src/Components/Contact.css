@@ -1,0 +1,202 @@
+.BigContainer{
+    width: 1200px;
+    height: 500px;
+    margin:7% 3%;
+    display: flex;
+}
+.container12{
+    width: 420px;
+    height: 500px;
+    margin: 0 10%;
+}
+#C{
+    opacity: 0.17;
+    position: absolute;
+    height: 465px;
+    width: 545px;
+    margin-left: 0;
+    background-color: rgb(53, 39, 112);
+    border-radius: 15px;
+    z-index: 1;
+}
+.Contact{
+    position: absolute;
+    text-align: center;
+    border: 1px solid rgb(197, 190, 190);
+    width: 500px;
+    margin-left: 24px;
+    margin-top: 22px;
+    border-radius: 7px;
+    z-index: 9;
+}
+#Con{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#tex{
+    border-radius: 9px;
+    margin-bottom: 6px;
+    width: 300px;
+    height: 32px;
+    margin-left: 0;
+}
+#bt{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+}
+#desc{
+    height: 100px;
+    width: 300px;
+    margin-left: 0;
+    border-radius: 9px;
+}
+
+#i{
+    font-size: 22px;
+}
+
+
+.vertical-line {
+    position: relative;
+    width: 2px;
+    height: 350px;
+    margin-left: 400px;
+    margin-top: 0px;
+}
+  
+.vertical-line::before {
+    content: "";
+    position: absolute;
+    top: -95%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation: slide-in 5s linear forwards infinite;
+}
+  
+@keyframes slide-in {
+    to {
+      top: 0;
+      height: 60%;
+      background-color: white;
+    }
+}
+#AboutText{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    margin-left: 33%;
+    margin-top: 30px;
+}
+.containerAbout{
+    margin-top: 20px;
+    z-index: 0;
+}
+#AboutMe{
+    font-size: 17px;
+    margin-top: 15px;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color : beige;
+    text-align: center;
+}
+#links{
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .Contact{
+        width: 390px;
+    }   
+    .container12{
+        width: 420px;
+        height: 500px;
+        margin: 0 1%;
+    }
+    .vertical-line{
+        width: 0;
+        height: 30px;
+    }  
+    .vertical-line::before {
+        background-color: none;
+    }
+      
+    @keyframes slide-in {
+        to {
+          background-color: none;
+        }
+    }
+    .containerAbout{
+        margin-top: 70px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    #C{
+        height: 440px;
+        width: 440px;
+    }
+    .Contact{
+        width: 390px;
+    }   
+    .container12{
+        width: 420px;
+        height: 500px;
+        margin: 0 15%;
+    }
+    
+}
+@media only screen and (max-width: 1000px){
+    #C{
+        height: 440px;
+        width: 440px;
+    }
+    .Contact{
+        width: 390px;
+    }   
+    .container12{
+        width: 420px;
+        height: 500px;
+        margin: 0 15%;
+    }
+    
+}
+@media only screen and (max-width: 900px){
+    #C{
+        height: 440px;
+        width: 440px;
+    }
+    .Contact{
+        width: 390px;
+    } 
+    .BigContainer{
+        display: inline;
+    }
+    .vertical-line{
+        width: 0;
+        height: 30px;
+    }  
+    .vertical-line::before {
+        background-color: none;
+    }
+      
+    @keyframes slide-in {
+        to {
+          background-color: none;
+        }
+    }
+    .container12{
+        width: 420px;
+        height: 500px;
+        margin: 0 1%;
+    }
+    .containerAbout{
+        margin-top: 70px;
+    }
+}

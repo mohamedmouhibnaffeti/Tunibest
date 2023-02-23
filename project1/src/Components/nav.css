@@ -1,0 +1,256 @@
+*{
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    background-size: contain;
+}
+header{
+    width:100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.871);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    background-size: contain;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color : antiquewhite;
+}
+.films{
+    display: none;
+}
+.nav-bar ul li,.h {
+    display: inline-block;
+    font-size: 20px;
+    color: antiquewhite;
+    padding: 10px 5px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 20px;
+}
+#s2{
+    margin-left: 20px;
+    margin-top: 1px;
+    border-radius: 7px;
+    cursor: text;
+    text-decoration: none;
+    width: 15rem;
+    height: 2.5rem;
+}
+#s:hover{
+    text-decoration: none;
+    cursor:text;
+}
+ul{
+    margin-right: 50px;
+}
+#l1{
+    margin-right: 4px;
+}
+#h1{
+    margin-right: 4px;
+    font-size: 23px;
+}
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 20px;
+    }
+    .nav-bar ul li,.h {
+        margin: 0 15px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 10px;
+    }
+    .nav-bar ul li,.h {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .Films{
+        display: block;
+        cursor: pointer;
+        margin-left: 100px;;
+        right: 0;
+    }
+    .Films .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+        margin-right: 0;
+    }
+    .nav-bar{
+        position: absolute;
+        height: 450px;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: black;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar:active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display:grid;
+        width: fit-content;
+        margin: 60px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    
+}
+
+
+
+
+
+
+
+
+.change ul li,.h {
+    display: inline-block;
+    font-size: 20px;
+    color: antiquewhite;
+    padding: 10px  5px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 20px;
+}
+#s{
+    margin-left: 20px;
+    margin-top: 1px;
+    border-radius: 7px;
+    cursor: text;
+    text-decoration: none;
+}
+#s:hover{
+    text-decoration: none;
+}
+ul{
+    margin-right: 50px;
+}
+#l1{
+    margin-left: 10px;
+}
+#h1{
+    margin-left: 10px;
+    font-size: 23px;
+}
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 20px;
+    }
+    .change ul li,.h {
+        margin: 0 15px;
+    }
+    
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 10px;
+    }
+    .change ul li,.h {
+        margin: 0 10px;
+    }
+    .Films.line{
+        margin-left: 1000px;
+    }
+       
+}
+
+@media only screen and (max-width: 1000px){
+    .Films{
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin-left: 50px;
+        right: 0;
+    }
+    .Films .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+        
+    }
+    .change{
+        margin-bottom: 100% ;
+    }
+    .change ul{
+        display:grid;
+        width: fit-content;
+        margin: 60px auto 0 auto;
+        text-align:center;
+        transition: 0.8s;
+    }
+    
+}
+/*
+#my_nav{
+    margin-top: 0%;
+    background-color: rgb(60, 57, 80);
+    height: 60px;
+    text-align: center;
+    border-radius: 7px;
+}
+li,.N{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin: 1.2% 20px;
+    margin-left: 10%;
+    position:static;
+}
+
+li:hover,.N:hover{
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+li:active,.N:hover{
+    color: rgb(26, 1, 98);
+}
+#f1{
+    font-size: 19px;
+}
+#s{
+    height: 25px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: 1.1% 5px;
+    position:static;
+}
+#s1{
+    display: inline-block;
+    margin-left: 0.5%;
+    margin-top: 1.1%;
+    font-size: 19px;
+}
+#s1:hover,li:hover,#f1:hover,#h1:hover,#c1:hover,N:hover{
+    cursor: pointer;
+}
+#h1{
+    font-size: 23px;
+}
+#c1{
+    font-size: 21px;
+}
+*/

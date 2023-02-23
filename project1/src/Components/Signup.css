@@ -1,0 +1,22 @@
+.Sign{
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    background-color: black;
+    align-items: center;
+}
+.Sign-field{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    margin: 10% auto;
+}
+#Si{
+    opacity: 0.17;
+    position: absolute;
+    height: 440px;
+    width: 440px;
+    background-color: rgb(53, 39, 112);
+    border-radius: 15px;
+    z-index: 1;
+}
