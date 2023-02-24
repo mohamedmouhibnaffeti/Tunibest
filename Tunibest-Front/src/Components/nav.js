@@ -1,7 +1,7 @@
 import './nav.css'
 import { NavLink } from 'react-router-dom';
 import {useRef, useEffect, useState} from 'react';
-function Nav() {
+function Nav(props) {
   const NavLinkStyles = ({isActive}) =>{
     return{
       fontWeight : isActive ? 'normal' : 'bold',
@@ -65,8 +65,7 @@ function Nav() {
             </li>
             <li>
               <div className='h'>
-              <i id='l1' className="fa fa-user" aria-hidden="true"></i>
-              <NavLink style={NavLinkStyles} to='/Login'><b>Login</b></NavLink>
+              {props.loggedin ? (<div><p style={{fontSize:'19px', cursor:'pointer',}}><i id='l1' class="fa fa-sign-out" aria-hidden="true"></i><b>Logout</b></p></div>) : (<div> <i id='l1' className="fa fa-user" aria-hidden="true"></i><NavLink style={NavLinkStyles} to='/Login'><b>Login</b></NavLink> </div>)}
               </div>
             </li>
           </ul>
